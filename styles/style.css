@@ -1,10 +1,10 @@
-html {
+/* ----------------------index.html---------------------- */
+html.index {
     background-color: #5cdb95;
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
-
 }
-h1 {
+h1.index {
     font-size: 65px;
     text-align: center;
     margin: 0;
@@ -12,7 +12,13 @@ h1 {
     color: #f86502;
     text-shadow: 3px 3px 1px black;
 }
-p, li {
+p.index, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    
+}
+p#kku {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
@@ -20,23 +26,249 @@ p, li {
 }
 #heading {
     color: blue;
-
 }
-.popular {
+li.popular {
     border: 4px dotted red;
 }
-body {
+body.index{
     width: 600px;
     margin: 0 auto;
     background-color: hsla(30, 3%, 85%, 0.966);
     padding: 0 20px 20px 20px;
     border: 5px solid rgba(248, 92, 2, 0.911);
 }
-img {
+img.index{
     display: block;
     margin: 20px auto;
 }
-figcaption {
+figcaption.index {
     text-align: center;
     font-size: small;
 }
+
+/* ----------------------profile.html---------------------- */
+
+html{
+    background-color: #ffe7d4;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+h5#name{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+p#about{
+    text-indent: 30px;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+p#contact{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+b.about-me{
+    font-size: 22px;
+    text-align: left;
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+img#profile{
+    align-content: center;
+    border-radius: 50%;
+    border-width: 100;
+    width: 50%;
+    padding: 20px 10px 0px 10px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#info {
+    padding: 0.01px;
+    background-color: #737373;
+    border-radius: 25px;
+    margin-top: 5px;
+    width: 600px;
+}
+hr.section-one{
+    width: 540px;
+}
+hr.section-two{
+    width: 540px;
+    border-color: black;
+}
+.skills{
+    font-size: 18px;
+    text-align: left;
+    color: white; 
+}
+.interests-list{
+    font-size: 18px;
+    text-align: left;
+    color: black; 
+}
+form{
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+  
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+  
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.form-inline button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    float: right;
+}
+.form-inline button:hover {
+    background-color: wheat;
+}
+#template {
+    display: flex;
+    flex-flow: row wrap;
+}
+div#experience {
+    padding: 0.01px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+
+}
+table {
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    border: 10px;
+    border-color: #737373;
+    border-radius: 2;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-color: wheat;
+    width: 600px;
+    border: 1px solid black;
+    
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    margin: 5px;
+    border: 20px;
+    color: black;
+    border: 1px solid black;
+    border-color: #737373;
+    border-radius: 2;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th{
+    text-align: center;
+}
+b {
+    font-size: 22px;
+    text-align: left;
+    color: black;
+    padding-left: auto;
+    padding-top: 20px;
+    padding-right: auto;
+}
+#interests{
+    margin-top: 140px;
+    border-radius: 25px;
+    padding: 0.01px;
+    background-color: wheat;
+}
+#interestsHead{
+    margin-left: 250px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
+    color: black;
+    padding-left: auto;
+    padding-top: 20px;
+    padding-right: auto;
+}
+#knowMeHead{
+    margin-left: 200px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
+    color: black;
+    padding-left: auto;
+    padding-top: 20px;
+    padding-right: auto;
+}
+#knowMe{
+    margin-top: 120px;
+    border-radius: 25px;
+    padding: 0.01px;
+    overflow: hidden;
+    background-color: rgb(185, 180, 180);
+}
+.fa {
+    padding: 20px;
+    font-size: 20px !important;
+    text-decoration: none;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #b4169a;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+tr:nth-child(even) {background-color:rgba(245, 245, 245, 0.582)}
