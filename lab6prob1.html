@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Event Target</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        div {
+            background-color: blue;
+            height: 200px;
+            width: 25%;
+            float: left;
+            margin: 5px 0 5px 0;
+        }
+        html {
+            background-color: white;
+        }
+    </style>
+    <body>
+    <script>
+        for (var i = 1; i <= 16; i++) {
+            var div = document.createElement("div")
+            document.body.appendChild(div)
+        }
+        random = function(number) {
+            return Math.floor(Math.random() * number)
+        }
+        changeBg = function() {
+            var randomCol = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")"
+            return randomCol 
+        }
+        var allDiv = document.querySelectorAll('div')
+        var count = 8
+        for (var i = 0; i < allDiv.length; i++) {
+        if ((i+1) % 2 != 0) {
+                allDiv[i].onclick = function(e) {
+                e.target.style.backgroundColor = changeBg()
+                }
+        } else {
+                allDiv[i].onclick = function(e) {
+                    if (e.target.style.backgroundColor == "rgb(255, 255, 4)") {
+                        console.log("only once")
+                    } else {
+                        e.target.style.backgroundColor = "rgb(" + 255 + "," + 255 + "," + 4 + ")"
+                        console.log(e.target.style.backgroundColor)
+                    }
+                }    
+           }
+        }      
+    </script>
+    </body>
+</html>
